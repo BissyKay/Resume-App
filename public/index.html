@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Upload and Editing</h1>
+    <form id="uploadForm">
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+      <textarea id="resume-editor"></textarea>
+      <button type="submit">Upload</button>
+    </form>
+    <div id="resume-list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
